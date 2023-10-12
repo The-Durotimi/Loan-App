@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shorcut icon" href="logo.png">
+</head>
+<body>
+
+    <div class="container">
+        <img src="logo.png" class="logo" width="80">
+
+        <div class="rate">
+            <span class="rate-label">Rate:</span>
+            <span class="rate-value">5%</span>
+        </div>
+
+        <div class="input-group">
+            <input type="number" placeholder="Loan Amount" class="principal" max="1000000">
+            <input type="number" placeholder="Duration in Months" class="time" max="24">
+            <div class="button-box">
+                <button class="calc-btn">Calculate</button>
+                <button class="reset-btn">Reset</button>
+            </div>
+        </div>
+
+        <div class="payment-breakdown">
+            <p><b>Interest</b> $ <span class="interest-value">0.00</span></p>
+            <p><b>Total Amount</b> $ <span class="amount-value">0.00</span></p>
+        </div>
+    </div>
+
+<!-- Javascript linking -->
+<script src="app.js"></script>
+</body>
+
+</html>

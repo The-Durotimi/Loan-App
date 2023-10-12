@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: #ccc;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    animation: bg-change;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    background-color: white;
+    border-radius: 10px;
+    flex-direction: column;
+    padding: 20px 40px;
+}
+
+.logo{
+    margin-bottom: 10px;
+}
+
+
+.rate{
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 10px;
+}
+
+.rate-label, .rate-value{
+    /* border: 1px solid black; */
+    padding: 5px 30px;
+    border-radius: 10px;
+}
+
+.rate-label{
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.rate-value{
+    border: 1px solid green;
+    background-color: transparent;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    cursor: pointer;
+}
+
+.input-group{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+
+.input-group input{
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid green;
+}
+
+.button-box{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.calc-btn, .reset-btn{
+    background-color: transparent;
+    color: green;
+    border: 1px solid green;
+    padding: 10px 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+
+
+.calc-btn:hover, .reset-btn:hover{
+    background-color: green;
+    color: white;
+}
+
+.payment-breakdown{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+.payment-breakdown p{
+    background-color: whitesmoke;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    font-size: 18px;
+
+}
+
+@media (max-width:450px){
+    .container{
+      width: 100%;
+    }
+}
+
+@keyframes bg-change{
+    0%{
+        background-color: gray;
+    }
+
+    25%{
+        background-color: rgb(138, 89, 89);
+    }
+
+    50%{
+        background-color:  rgb(161, 62, 62);
+    }
+
+    75%{
+        background-color:  rgb(167, 28, 28);
+    }
+
+    100%{
+        background-color:  rgb(61, 172, 180);
+    }
+}
+
